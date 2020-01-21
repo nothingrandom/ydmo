@@ -1,0 +1,47 @@
+{
+  "name": "ydmo",
+  "version": "0.0.1",
+  "description": "Date parsing for a past or future data with a simple short letter format",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nothingrandom/ydmo"
+  },
+  "keywords": [
+    "date",
+    "parse",
+    "parser",
+    "fuzzy",
+    "time",
+    "utility"
+  ],
+  "author": {
+    "name": "Benjamin Hollway",
+    "email": "benjamin@nothingrandom.com",
+    "url": "nothingrandom.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nothingrandom/ydmo/issues"
+  },
+  "homepage": "https://github.com/nothingrandom/ydmo#readme",
+  "xo": {
+    "extends": [
+      "eslint-config-airbnb-base"
+    ]
+  },
+  "dependencies": {
+    "meow": "^6.0.0"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "xo": "^0.25.3",
+    "eslint-config-airbnb-base": "^14.0.0"
+  }
+}
