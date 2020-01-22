@@ -3,12 +3,24 @@ const parse = require('./parse');
 const ydmo = (s) => {
   const fragments = parse(s);
 
+  const datePeriods = {
+    y: 60 * 60 * 24 * 365,
+    mo: (60 * 60 * 24 * 365) / 12,
+    m: (60 * 60 * 24 * 365) / 12,
+    d: 60 * 60 * 24,
+    h: 60 * 60,
+    mi: 60,
+    s: 1,
+  };
+
+  const dateNow = new Date();
+  let timeNow = dateNow.getTime();
+
   fragments.forEach((unit) => {
-    // turn each unit.period into a * multiplier to add or subtract from new Date();
-    // multiply the period multiplier by unit quantity
+    timeNow += ((datePeriods[unit.period] * unit.quantity) * 1000);
   });
 
-  return fragments;
+  return new Date(timeNow);
 };
 
 module.exports = ydmo;

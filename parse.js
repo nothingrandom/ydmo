@@ -1,6 +1,6 @@
 const parse = (s) => {
   const fragments = [];
-  const numberSegments = s.match(/[0-9]+/g);
+  const numberSegments = s.match(/[+-]?[0-9]+/g);
   const letterSegments = s.match(/[A-Za-z]+/g);
 
   if (numberSegments.length !== letterSegments.length) {
@@ -8,13 +8,15 @@ const parse = (s) => {
   }
 
   numberSegments.forEach((i, index) => {
+    const segModifier = i.match(/[+-]+/g) || ['+'];
+    const segNumber = i.match(/[0-9]+/g);
+
     fragments.push({
-      quantity: numberSegments[index],
+      modifier: segModifier.toString(),
+      quantity: Number(segNumber),
       period: letterSegments[index],
     });
   });
-
-  // TODO: be able to parse the + or - at the beginning of `s`
 
   return fragments;
 };

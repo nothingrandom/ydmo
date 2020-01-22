@@ -31,5 +31,7 @@ Hour: `h`
 
 Minute: `mi`
 
+Second: `s`
+
 ## License
 MIT © [Benjamin Hollway](https://nothingrandom.com)

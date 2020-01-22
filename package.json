@@ -1,6 +1,6 @@
 {
   "name": "ydmo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Date parsing for a past or future data with a simple short letter format",
   "main": "index.js",
   "scripts": {
@@ -36,12 +36,10 @@
       "eslint-config-airbnb-base"
     ]
   },
-  "dependencies": {
-    "meow": "^6.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^2.4.0",
-    "xo": "^0.25.3",
-    "eslint-config-airbnb-base": "^14.0.0"
+    "eslint-config-airbnb-base": "^14.0.0",
+    "xo": "^0.25.3"
   }
 }
