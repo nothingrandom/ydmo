@@ -4494,6 +4494,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+varops@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/varops/-/varops-1.0.0.tgz#a4780417a8be0d307927959e605e9ee1c3b2d2c5"
+  integrity sha512-DA1AhOFKbhuuBT0wuZtq+tBJKiNNOxf2K37T7r+KvCnnt1OyVCgeEIgVU0TKjQ+CqJRZrmMz2ffs2m1uYIMfHQ==
+
 wcwidth@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/wcwidth/-/wcwidth-1.0.1.tgz#f0b0dcf915bc5ff1528afadb2c0e17b532da2fe8"

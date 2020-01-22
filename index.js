@@ -1,3 +1,4 @@
+const varops = require('varops');
 const parse = require('./parse');
 
 const ydmo = (s) => {
@@ -17,7 +18,7 @@ const ydmo = (s) => {
   let timeNow = dateNow.getTime();
 
   fragments.forEach((unit) => {
-    timeNow += ((datePeriods[unit.period] * unit.quantity) * 1000);
+    timeNow = varops[unit.modifier](timeNow, ((datePeriods[unit.period] * unit.quantity) * 1000));
   });
 
   return new Date(timeNow);

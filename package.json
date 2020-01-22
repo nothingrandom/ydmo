@@ -36,7 +36,9 @@
       "eslint-config-airbnb-base"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "varops": "^1.0.0"
+  },
   "devDependencies": {
     "ava": "^2.4.0",
     "eslint-config-airbnb-base": "^14.0.0",

@@ -85,3 +85,9 @@ test('parse long maths 2', (t) => {
   };
   t.deepEqual(parseTest.parsed, parseTest.expected);
 });
+
+test('throw test', (t) => {
+  t.throws(() => {
+    parse('1y5');
+  });
+});
