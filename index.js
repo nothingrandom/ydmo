@@ -1,7 +1,7 @@
 const varops = require('varops');
 const parse = require('./parse');
 
-const ydmo = (s) => {
+const ydmo = (s = '') => {
   const fragments = parse(s);
 
   const datePeriods = {

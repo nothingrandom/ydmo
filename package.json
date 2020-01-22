@@ -1,6 +1,6 @@
 {
   "name": "ydmo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Date parsing for a past or future data with a simple short letter format",
   "main": "index.js",
   "scripts": {

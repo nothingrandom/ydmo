@@ -36,3 +36,9 @@ test('empty', (t) => {
   const jsDate = new Date().getTime();
   t.is(ydmoDate, jsDate);
 });
+
+test('nothing', (t) => {
+  const ydmoDate = ydmo().getTime();
+  const jsDate = new Date().getTime();
+  t.is(ydmoDate, jsDate);
+});
