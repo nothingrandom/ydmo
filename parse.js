@@ -1,6 +1,6 @@
 const parse = (s) => {
   const fragments = [];
-  const numberSegments = s.match(/[+-]?\d+/g);
+  const numberSegments = s.match(/[+-]?[.]?\d+/g);
   const letterSegments = s.match(/[A-Za-z]+/g);
 
   if (numberSegments && letterSegments) {
@@ -13,7 +13,7 @@ const parse = (s) => {
 
   numberSegments.forEach((i, index) => {
     const segModifier = i.match(/[+-]+/g) || ['+'];
-    const segNumber = i.match(/\d+/g);
+    const segNumber = i.match(/[.]?\d+/g);
 
     fragments.push({
       modifier: segModifier.toString(),

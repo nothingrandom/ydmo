@@ -49,6 +49,12 @@ test('10 days minus 5 hours', (t) => {
   t.is(ydmoDate, jsDate);
 });
 
+test('decimal test', (t) => {
+  const ydmoDate = ydmo('.5d').getTime();
+  const jsDate = new Date().getTime() + (((60 * 60 * 24) / 2) * 1000);
+  t.is(ydmoDate, jsDate);
+});
+
 test('empty', (t) => {
   const ydmoDate = ydmo('').getTime();
   const jsDate = new Date().getTime();
