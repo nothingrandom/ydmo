@@ -25,6 +25,8 @@ Year: `y`
 
 Month: `mo` or `m`
 
+Week: `w`
+
 Day: `d`
 
 Hour: `h`
